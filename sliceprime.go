@@ -37,7 +37,8 @@ func IsPrime(in []int) bool {
 	}
 
 	// eliminate odd numbers
-	sr := int(math.Sqrt(float64(num)))
+	srf := math.Floor(math.Sqrt(float64(num)))
+	sr := int(srf)
 	for i := 3; i <= sr; i = i + 2 {
 		if num%i == 0 {
 			return false
