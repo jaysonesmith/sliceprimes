@@ -13,6 +13,7 @@ func IsPrime(in []int) bool {
 		return false
 	}
 
+	// sum up numbers in slice toi get our working number
 	num := 0
 	for _, n := range in {
 		if num+n > math.MaxInt32 {
